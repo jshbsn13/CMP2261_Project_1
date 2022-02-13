@@ -59,7 +59,10 @@ public class Main {
 
         }
 
-        System.out.printf("%d:%d", hours, minutes); //prints hours:minutes
+        String hourStr = String.format("%02d", hours);  //formats int so there is always two digits left padded with 0
+        String minStr = String.format("%02d", minutes);
+
+        System.out.printf("%s:%s", hourStr, minStr); //prints hours:minutes
 
     }
 
